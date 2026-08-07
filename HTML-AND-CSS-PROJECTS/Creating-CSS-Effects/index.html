@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Creating Effects with CSS</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <!-- NAV BAR -->
+         <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="#">Home</a> <!--number sign by itself takes you to the top of the page when clicked-->
+                </li>
+                <li class="drop">
+                    <a href="#">Images</a>
+                    <div class="rollover-menu">
+                        <a href="#image1">Image 1</a>
+                        <a href="#image2">Image 2</a>
+                        <a href="#image3">Image 3</a>
+                    </div>
+                </li>
+            </ul>
+         </nav>
+         <!-- IMAGES --> 
+        <section>
+            <!--IMAGE 1-->
+            <div class="image-container" id="image1">
+                <img src="images/gude_1.jpg" alt="Gude 1">
+                <div class="overlay"></div>
+            </div>
+            <!--IMAGE 2-->
+            <div class="image-container" id="image2">
+                <img src="images/gude_2.jpg" alt="Gude 2" class="zoom">
+            </div>
+            <!--IMAGE 3-->
+            <div class="image-container" id="image3">
+                <div class="circle">
+                    <img src="images/gude_3.jpg" alt="Gude 3">
+                </div>
+            </div>
+        </section> 
+        <!-- FOOTER -->
+         <footer>
+            <div class="footer-text">
+                <p>The Tech Academy &copy;</p>
+            </div>
+         </footer>  
+    </body>
+</html>
