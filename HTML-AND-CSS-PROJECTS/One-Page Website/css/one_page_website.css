@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap'); /*font from google fonts*/
+
+* {
+    font-family: "Special Elite", system-ui;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 14px;
+}
+
+input {
+    width: 100px;
+    margin: 5px;
+    border: 2px solid lightblue;
+    border-radius: 5px;
+}
