@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dia Valentine</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <!--Body-->
+    <body id="home">
+        <!--Navbar-->
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#github">GitHub</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <!--Background image-->
+        <div class="forest-background">
+            <img src="images/forest.jpg" alt="forest background image">
+            <h2>My name is Dia Valentine and welcome to my portfolio website!</h2>
+        </div>
+        <br>
+        <br>
+        <!--About Section-->
+        <section id="about">
+            <div class="row">
+                <div class="column_1">
+                    <img src="images/dia.jpg" id="dia-image" alt="a picture of me, Dia Valentine">
+                    <p>Dia Valentine, age 24</p>
+                </div>
+                <div class="column_2">
+                    <h1>About Me</h1>
+                    <p><strong>Hobbies: </strong>D&D/other ttrpgs, reading, writing</p>
+                    <p><strong>Skills: </strong>French(intermediate), coding(HTML, CSS, Python)</p>
+                </div>
+            </div>
+        </section>
+        <!--GitHub Section-->
+        <section id="github">
+            <div class="row">
+                <div class="column_2">
+                    <h1>My GitHub</h1>
+                    <p>Check out my GitHub profile for more projects!</p>
+                    <p><a href="https://github.com/diavalentine">Github Link</a></p>
+                </div>
+                <div class="column_1">
+                    <video width="500" height="auto" autoplay muted loop>
+                        <source src="images/coding.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+        <!--Contact Section-->
+        <section id="contact">
+            <div class="row">
+                <div class="column_1" id="letter-image" >
+                    <img src="images/letter.jpg" alt="a picture of a letter" width="500" height="auto">
+                </div>
+                <div class="column_2">
+                    <h1>Contact</h1>
+                    <form action="https://formspree.io/f/mppzoyjv" method="post">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" required></textarea><br>
+                        <button type="submit" value="Submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--Footer-->
+        <footer>
+            <p>Designed by Dia Valentine</p>
+        </footer>
+    </body>
+</html>

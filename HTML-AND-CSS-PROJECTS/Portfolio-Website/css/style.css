@@ -1,0 +1,195 @@
+/*General Styles*/
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap'); /*Importing font Uncial Antiqua from Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+
+:root {
+    --main-font-family: 'Uncial Antiqua', cursive;
+    --secondary-font-family: 'Amarante', serif;
+    background-color: black;
+}
+
+p, label{
+    font-family: var(--secondary-font-family);
+    font-size: 22px;
+}
+
+body{
+    margin: 0;
+}
+
+.row{
+    display: flex;
+}
+
+h1{
+    font-family: var(--main-font-family);
+    font-size: 36px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: yellow;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.column_1{
+    width: 50%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: olive;
+}
+
+#dia-image{
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#letter-image{
+    align-items: center;
+}
+
+.column_2{
+    width: 50%;
+    float: right;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: darkolivegreen;
+}
+
+/*Navbar Styles*/
+.navbar{
+    z-index: 1;
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: black;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 24px;
+    font-family: var(--main-font-family);
+}
+
+.navbar a:hover{
+    color: yellow;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/*Header Styles*/
+.forest-background{
+    position: relative;
+}
+
+.forest-background img{
+    max-width: 100%;
+    height: auto;
+}
+
+.forest-background h2{
+    color: yellowgreen;
+    font-family: var(--secondary-font-family);
+    font-size: 25px;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.forest-background h2:hover{
+    transition: font-size 0.3s ease-in-out;
+    font-size: 30px;
+    color: yellow;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+input{
+    width: 95%;
+    margin: 20px;
+}
+
+textarea{
+    width: 95%;
+    height: 100px;
+    margin: 20px;
+}
+
+footer p{
+    color: yellow;
+    text-align: center;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 1199px) {
+    .forest-background h2{
+        font-size: 20px;
+    }
+
+    .forest-background h2:hover{
+        font-size: 25px;
+    }
+
+    .row{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column_1, .column_2 {
+        width: 100%;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    video{
+        max-width: 100%;
+        height: auto;
+    }
+
+    #github .column_1{
+        background-color: darkolivegreen;
+    }
+
+    #github .column_2{
+        background-color: olive;
+    }
+
+    input{
+        margin: 0;
+    }
+
+    textarea{
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .forest-background h2{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #letter-image img{
+        transform: translateY(50px);
+    }
+}
