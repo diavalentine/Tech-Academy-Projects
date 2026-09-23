@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Alarm Project</title>
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    </head>
+    <body>
+        <!--alarm section-->
+        <div class="alarm">
+            <p>How many seconds would you like to set your alarm for?</p>
+            <input id="seconds" value="">
+            <button onclick="countdown()">Click here!</button>
+            <p id="timer"></p>
+        </div>
+        <!--slideshow section-->
+        <div class="slideshow">
+            <img class="slide" src="images/squid_monster.webp" alt="squid monster">
+            <img class="slide" src="images/owl_monster.webp" alt="owl monster">
+            <img class="slide" src="images/eyeball_monster.webp" alt="eyeball monster">
+
+            <button onclick="changeSlide(-1)">❮</button>
+            <button onclick="changeSlide(1)">❯</button>
+        </div>
+        <script src="JS/main.js"></script>
+    </body>
+</html>

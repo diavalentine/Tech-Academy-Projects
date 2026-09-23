@@ -1,0 +1,16 @@
+
+
+/* Slideshow container */
+.slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/*slides themselves*/
+.slide {
+    display: none;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
