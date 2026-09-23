@@ -6,9 +6,25 @@
         <script src="JS/main.js"></script>
     </head>
     <body>
-        <p>Riders must be at least 52 centimeters tall to ride.</p>
-        <input id="height" value="52">
-        <button onclick="Ride_Function()">Click here</button>
-        <p id="Ride"></p>
+        <!--Height check with ternary operator-->
+        <div>
+            <p>Riders must be at least 52 centimeters tall to ride.</p>
+            <input id="height" value="52">
+            <button onclick="Ride_Function()">Click here</button>
+            <p id="Ride"></p>
+        </div>
+        <div>
+            <!--input data to create Person object-->
+            <p>Enter your name and age:</p>
+            <label for="name">Name</label>
+            <input id="name" value="">
+            <label for="age">Age</label>
+            <input id="age" value=0>
+            <!--press button to create new person-->
+            <button onclick="makePerson()">Submit</button>
+            <br>
+            <!--Person info displayed in the following p element:-->
+            <p id="person"></p>
+        </div>
     </body>
 </html>
