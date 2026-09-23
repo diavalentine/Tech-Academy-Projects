@@ -34,5 +34,5 @@ function and(){
 
 //OR = ||
 function or(){
-    document.write(10 != "Ten" || 10 < 5);
+    document.write(10 != "Ten" || 3 > 6);
 }
