@@ -460,3 +460,81 @@ input[type="submit"]{
 input[type="submit"]:hover{
     background-color: rgb(247, 177, 188);
 }
+
+/*RECIPE MODAL*/
+.recipe-modal{
+    display: none; /*prevents the modal from showing on the
+    web browser until otherwise specified*/
+    position: fixed; /*positions the modal relative to the 
+    browser window*/
+    left: 0;
+    top: 0;
+    width: 100%; /*modal takes up full width of screen*/
+    height: 100%; /*modal takes up full height of screen*/
+    background-color: rgba(255, 255, 255, 0.5); /*creates a transparent background
+    that covers the whole screen*/
+}
+
+.recipe-content{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    top: 15vh;
+    left: 27vw;
+    width: 45vw;
+    height: 70%;
+    box-shadow: 0 2px 10px 5px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box; /*includes padding and border in the
+    element's total width and height*/
+}
+
+.close-btn{
+    color: rgb(1, 128, 106);
+    font-size: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    float: right; /*positions the close button to the top right
+    of the modal*/
+    padding-right: 10px;
+}
+
+.modal-header{
+    padding-top: 20px;
+}
+
+.modal-body{
+    padding: 20px;
+}
+
+.row{
+    display: flex; /*creates a flex container for elements to expand or shrink
+    to fit in the available space and places elements side by side*/
+    justify-content: center; /*centers the elements within the row class*/
+}
+
+.rp-column-1{
+    width: 33%;
+}
+
+.rp-column-2{
+    width: 67%;
+}
+
+.recipe-list{
+    margin-left: -30px; /*moves the list to the left to align with the
+    left edge of the modal*/
+    font-family: 'Josefin Slab', serif; /*font from google fonts*/
+    font-size: 18px;
+    display: block; /*overrides the flex value property in the ul type selector to list the ingredients vertically*/
+    border: none; /*overrides the border property in the ul type selector to remove the border*/
+    background-color: transparent; /*overrides the background-color property in the ul type selector 
+    to remove the background color*/
+    line-height: 1.5; /*increases the space between each list item*/
+    text-align: center;
+}
+
+.recipe-directions{
+    padding: 0px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+}
