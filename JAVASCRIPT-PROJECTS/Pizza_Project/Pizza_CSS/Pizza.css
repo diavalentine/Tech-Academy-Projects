@@ -1,0 +1,79 @@
+body {
+    background-color: darkred;
+}
+
+h1 {
+    font-family: "Lucida Console", Monaco, monospace;
+    color: white;
+    text-align: center;
+}
+
+#btnOrder {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: "Lucida Console", Monaco, monospace;
+    color: yellow;
+}
+
+div {
+    font-family: "Lucida Console", Monaco, monospace;
+    color: orange;
+}
+
+#menuBG {
+    margin: 10px auto;
+    width:750px;
+    height:470px;
+}
+
+#frmMenu {
+    width:750px;
+    height:200px;
+    margin: auto;
+}
+
+.pizzaOptions {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+#totalPrice {
+    width:200px;
+    height:190px;
+    margin:0 auto;
+    float:right;
+}
+
+.left {
+    height:200px;
+}
+
+.center {
+    height:200px;
+}
+
+.right {
+    height:200px;
+}
+
+#showText {
+    width:200px;
+    height:190px;
+    margin:0px auto;
+    float:left;
+}
+
+#cart {
+    top:0;
+    margin:0px auto;
+    width:400px;
+    height:200px;
+}
