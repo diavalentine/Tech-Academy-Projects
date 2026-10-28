@@ -34,7 +34,15 @@ input {
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    gap: 20px;
 }
+
+#leftArrow, #rightArrow {
+    font-size: 100px;
+    cursor: pointer;
+    color: white;
+}
+
 
 #enlargedImage {
     width: 50%;
