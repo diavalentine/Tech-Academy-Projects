@@ -310,3 +310,28 @@ other images on the page and overrides the img type selector styling*/
     width: auto;
     height: 130px;
 }
+
+/*POPOVERS*/
+.star-rating{
+    width: 80%;
+}
+
+/*TOAST*/
+
+.custom-toast{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+/*ALERT*/
+.custom-alert{
+    display: none;               /*hidden until a ticket is bought*/
+    position: fixed;             /*stays put even when the page scrolls*/
+    top: 10px;                   /*pinned to the top of the screen*/
+    left: 50%;
+    transform: translateX(-50%); /*centers it horizontally*/
+    z-index: 1100;               /*sits above the sticky navbar*/
+}
