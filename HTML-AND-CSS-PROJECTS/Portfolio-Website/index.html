@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dia Valentine</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/portfolio.js" defer></script>
     </head>
     <!--Body-->
     <body id="home">
@@ -15,6 +16,8 @@
             <a href="#about">About</a>
             <a href="#github">GitHub</a>
             <a href="#contact">Contact</a>
+            <!--NEW FEATURE: light-mode toggle-->
+            <button id="theme-toggle" aria-label="Switch to light mode">☀️</button>
         </div>
         <!--Background image-->
         <div class="forest-background">
@@ -54,6 +57,7 @@
             </div>
         </section>
         <!--Contact Section-->
+        <!--UPGRADED FEATURE: form uses JS to submit HTTP Request with form info, instead of opening separate page-->
         <section id="contact">
             <div class="row">
                 <div class="column_1" id="letter-image" >
@@ -61,21 +65,30 @@
                 </div>
                 <div class="column_2">
                     <h1>Contact</h1>
-                    <form action="https://formspree.io/f/mppzoyjv" method="post">
+                    <form id="contact-form" action="https://formspree.io/f/mppzoyjv" method="post">
                         <label for="name">Name:</label><br>
                         <input type="text" id="name" name="name" required><br>
                         <label for="email">Email:</label><br>
                         <input type="email" id="email" name="email" required><br>
                         <label for="message">Message:</label><br>
                         <textarea id="message" name="message" rows="4" required></textarea><br>
-                        <button type="submit" value="Submit">Submit</button>
+                        <button type="submit" value="Submit" id="submitBtn">Submit</button>
+                        <p id="form-status" role="status"></p>
                     </form>
                 </div>
             </div>
         </section>
         <!--Footer-->
         <footer>
-            <p>Designed by Dia Valentine</p>
+            <!--NEW FEATURE: Secret dice roll when dice button is clicked-->
+            <p>Designed by Dia Valentine<span id="secret-button">🎲</span></p>
+            <div id="secret">
+                <p>You found the secret d20!</p>
+                <p>Rolling for your luck...</p>
+                <p id="secret-roll"></p>
+                <p id="hidden-msg"></p>
+                <p>Click anywhere to close</p>
+            </div>
         </footer>
     </body>
 </html>

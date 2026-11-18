@@ -5,12 +5,34 @@
 :root {
     --main-font-family: 'Uncial Antiqua', cursive;
     --secondary-font-family: 'Amarante', serif;
-    background-color: black;
+    --page-bg: black;
+    --col-1-bg: olive;
+    --col-2-bg: darkolivegreen;
+    --heading-bg: black;
+    --heading-text: white;
+    --nav-bg: black;
+    --footer-text: yellow;
+    background-color: var(--page-bg);
+}
+
+:root[data-theme="light"] {
+    --page-bg: #f4ecd8;
+    --col-1-bg: #c5d39a;
+    --col-2-bg: #a8bb74;
+    --heading-bg: #3f4f1f;
+    --heading-text: #f4ecd8;
+    --nav-bg: #3f4f1f;
+    --footer-text: #3f4f1f;
 }
 
 p, label{
     font-family: var(--secondary-font-family);
     font-size: 22px;
+}
+
+#theme-toggle{
+    margin-left: auto;
+    background-color: var(--heading-bg);
 }
 
 body{
@@ -26,11 +48,11 @@ h1{
     font-size: 36px;
     text-align: center;
     color: white;
-    background-color: black;
+    background-color: var(--heading-bg);
 }
 
 a{
-    color: black;
+    color: var(--heading-bg:);
     text-decoration: none;
 }
 
@@ -45,7 +67,7 @@ a:hover{
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
-    background-color: olive;
+    background-color: var(--col-1-bg);
 }
 
 #dia-image{
@@ -64,7 +86,7 @@ a:hover{
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
-    background-color: darkolivegreen;
+    background-color: var(--col-2-bg);
 }
 
 /*Navbar Styles*/
@@ -74,7 +96,7 @@ a:hover{
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: black;
+    background-color: var(--nav-bg);
 }
 
 .navbar a{
@@ -114,13 +136,14 @@ a:hover{
 .forest-background h2:hover{
     transition: font-size 0.3s ease-in-out;
     font-size: 30px;
-    color: yellow;
+    color: var(--footer-text);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 input{
     width: 95%;
     margin: 20px;
+    padding: 10px;
 }
 
 textarea{
@@ -129,9 +152,50 @@ textarea{
     margin: 20px;
 }
 
+#submitBtn{
+    padding: 10px;
+}
+
 footer p{
-    color: yellow;
+    color: var(--footer-text);
     text-align: center;
+}
+
+
+/*secret button section*/
+#secret-button {
+    opacity: 0.3;        /* faint, so it's "hidden" */
+    cursor: pointer;
+}
+
+#secret {
+    display: none;       /* hidden until clicked */
+    position: fixed;     /* covers the whole screen */
+    inset: 0;
+    z-index: 10;         /* sits above my sticky navbar */
+    background-color: black;
+    text-align: center;
+    padding-top: 20vh;
+}
+
+#secret.show {
+    display: block;
+}
+
+#secret p {
+    color: gold;
+}
+
+#secret-roll {
+    display: inline-block;
+    font-family: var(--main-font-family);
+    font-size: 100px;
+    animation: spin 1s;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg) scale(0); }
+    to   { transform: rotate(360deg) scale(1); }
 }
 
 /*Media Queries*/
@@ -165,11 +229,11 @@ footer p{
     }
 
     #github .column_1{
-        background-color: darkolivegreen;
+        background-color: var(--col-2-bg);
     }
 
     #github .column_2{
-        background-color: olive;
+        background-color: var(--col-1-bg);
     }
 
     input{
